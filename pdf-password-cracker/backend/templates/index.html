@@ -533,7 +533,7 @@ button:hover {
                         <p style="color:red;">Please note that there is a chance the password is too tough and may take a long time to find among the 8 billion passwords in the wordlist. There is also a chance that your password might not be in the wordlist at all, meaning recovery is not guaranteed.</p>
                         <p>"If the wordlist file cannot be downloaded, you can directly email it to me. I will send you the wordlist file.<br> email ID: sachinkumar7033777@gmail.com."</p>
                     </div>
-                    <a href="../wordlist/common_passwords.zip" class="download-button" download>
+                     <a href="{{ url_for('static', filename='wordlist/common_passwords.txt') }}" class="download-button" download>
                         <i class="fas fa-download"></i>
                         <span>Download Wordlist</span>
                     </a>
